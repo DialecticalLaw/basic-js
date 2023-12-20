@@ -10,9 +10,30 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For aabbbc should return 2a3bc
  *
  */
-function encodeLine(/* str */) {
+function encodeLine(/*str*/) {
+  // let result = '';
+  // let counter = 0;
+  // const uniqueSet = new Set();
+  // for (let i = 0; i < str.length; i++) {
+  //   uniqueSet.add(str[i]);
+  // }
+
+  // const uniqueArr = [...uniqueSet];
+
+  // for (let i = 0; i < uniqueArr.length; i++) {
+  //   for (let n = 0; n < str.length; n++) {
+  //     if (str[n] === uniqueArr[i]) {
+  //       counter += 1;
+  //     }
+  //   }
+  //   if (counter !== 0) {
+  //     result += `${counter.toString()}${uniqueArr[i]}`;
+  //     counter = 0;
+  //   } else {
+  //     result += str[i];
+  //   }
+  // }
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
 }
 
 module.exports = {
