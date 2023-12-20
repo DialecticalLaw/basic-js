@@ -15,14 +15,11 @@ function getEmailDomain(email) {
   const emailFilteredDog = emailArr.filter(item => item === '@');
   if (emailFilteredDog.length > 1) {
     const dogLastIndex = emailArr.findLastIndex(item => item === '@');
-    console.log(dogLastIndex)
     return email.slice(dogLastIndex + 1);
   }
   const dogIndex = emailArr.findIndex(item => item === '@');
   return email.slice(dogIndex + 1);
 }
-
-console.log(getEmailDomain('very.unusual.@.unusual.com@usual.com'))
 
 module.exports = {
   getEmailDomain
